@@ -307,6 +307,8 @@ Browser activity is separated into distinct profiles according to trust level an
     Used for investigating unknown links, testing untrusted web applications, and performing general and transient clear-net lookup.
     Moderate Hardening. No persistent state.
 
+(Will document further more later)
+
 ====================
 Layer 4: Credentials
 ====================
