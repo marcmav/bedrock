@@ -4,7 +4,7 @@ bedrock
 
 A playbook of the architectural root of my security model. It defines the foundational layers, principles and controls that every system must satisfy before it can be considered trusted.
 
-Scope: Bedrock defines the security architecture for personal computers (The layers I can consistently control on every personal computer I own). Infrastructure outside the host (e.g., routers or cloud infrastructure) is intentionally out of scope. While some controls also improve privacy, every recommendation in Bedrock is included because it strengthens the system's security.
+Scope: Bedrock defines the security architecture for personal computers (The layers I can consistently control on every personal computer I own). Infrastructure outside the host (e.g., routers, cloud infrastructure and hardware security keys) is intentionally out of scope. While some controls also improve privacy, every recommendation in Bedrock is included because it strengthens the system's security.
 
 ==========================
 The Defense-in-Depth Model
@@ -366,14 +366,11 @@ Controls
 > - 2FA Coverage
     Every account that supports a second factor must have one enabled. Prioritize accounts that protect email, financial services, primary identity and the password manager itself.
 
-> - Hardware Key (Where Supported)
-    Where services support FIDO2 or WebAuthn, prefer a hardware security key over TOTP. Hardware keys are phishing-resistant by design, TOTP is not.
-
 > - Vault Access Hardening
     Access to the password manager must itself be protected by a second factor. (The vault is the single point of failure for the entire credentials layer).
 
 > - Phishing Awareness
-    Credentials must never be entered on a domain that has not been independently verified. The password manager's autofill behavior provides passive protection, it will not fill credentials on a domain that does not match the stored entry.
+    Credentials must never be entered on a domain that has not been independently verified. (The password manager's autofill behavior provides passive protection, it will not fill credentials on a domain that does not match the stored entry).
 
 > - Credential Rotation
     Rotate credentials for high-value accounts periodically and immediately if any suspected breach or service-side data leak happened.
