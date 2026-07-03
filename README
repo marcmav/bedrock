@@ -379,7 +379,7 @@ Controls
     Rotate credentials for high-value accounts periodically and immediately if any suspected breach or service-side data leak happened.
 
 > - Breach Monitoring
-    Monitor accounts against known breach databases to identify exposed credentials before they are exploited. (HaveIBeenPwned).
+    Monitor accounts against known breach databases to identify exposed credentials before they are exploited.
 
 
 ==============
