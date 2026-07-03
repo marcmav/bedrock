@@ -357,14 +357,14 @@ Controls
 > - TOTP Authenticator Selection
     Use an open-source, locally encrypted TOTP application with no cloud dependency.
 
-> - TOTP Over SMS
-    Use time-based one-time passwords (TOTP) as the second factor wherever possible. (SMS-based 2FA is vulnerable to SIM swapping and interception and must be avoided).
-
 > - TOTP Backup Codes
     Store account recovery codes in the password manager vault immediately after enabling 2FA. Loss of TOTP access without backup codes results in permanent account lockout.
 
 > - 2FA Coverage
     Every account that supports a second factor must have one enabled. Prioritize accounts that protect email, financial services, primary identity and the password manager itself.
+
+> - TOTP Over SMS
+    Use time-based one-time passwords (TOTP) as the second factor wherever possible. (SMS-based 2FA is vulnerable to SIM swapping and interception and must be avoided).
 
 > - Vault Access Hardening
     Access to the password manager must itself be protected by a second factor. (The vault is the single point of failure for the entire credentials layer).
