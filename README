@@ -13,7 +13,7 @@ The Defense-in-Depth Model
 Security is engineered sequentially from the system's lowest trust boundary outward to my digital identity. If a lower layer is compromised, the structural integrity of every layer above it is void.
 
 [ Layer 5: Alias ] --- Identity
-    [ Layer 4: Credentials ] --- Password Manager, TOTP
+    [ Layer 4: Credentials ] --- Password Manager, Multi-factor Authenticator
         [ Layer 3: Gateway ] --- Browser, Search Engine
             [ Layer 2: Network ] --- Firewall, DNS, VPN
                 [ Layer 1: Compute ] --- Operating System
@@ -314,14 +314,15 @@ Browser activity is separated into distinct profiles according to trust level an
 Layer 4: Credentials
 ====================
 
-The Credentials layer protects the secrets that authenticate identity across every service, account and system. It consists of the password manager and TOTP authenticator, the two mechanisms responsible for generating, storing and producing proof of identity on demand. If this layer is compromised, every account and service above it is accessible to the adversary regardless of how well the layers below it are hardened.
+The Credentials layer protects the secrets that authenticate identity across every service, account and system. It consists of the password manager and Multi-factor authenticator, the two mechanisms responsible for generating, storing and producing proof of identity on demand. If this layer is compromised, every account and service above it is accessible to the adversary regardless of how well the layers below it are hardened.
 
 ----------
 Components
 ----------
 
 > - Password Manager
-> - TOTP Authenticator
+> - Multi-factor Authenticator
+> - Recovery Codes
 
 ---------
 Principle
