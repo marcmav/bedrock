@@ -341,7 +341,7 @@ Controls
 --------
 
 > - Password Manager Selection
-    Use an open-source, audited password manager. If using a local file-based database, it must be strongly encrypted and synchronized only via end-to-end encrypted local channels. If using a cloud vault, it must use zero-knowledge local encryption before transmission.with end-to-end encryption. The credential vault must never be accessible to the service provider in plaintext.
+    Use an open-source, audited password manager. If using a local file-based database, it must be strongly encrypted and synchronized only via end-to-end encrypted local channels. If using a cloud vault, it must use zero-knowledge local encryption before transmission.with end-to-end encryption.
 
 > - Unique Passwords
     Every account must have a unique password. (Credential reuse means a single breach propagates access across every service sharing that password).
