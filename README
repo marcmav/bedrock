@@ -428,10 +428,10 @@ Controls
 --------
 
 > - Identity Separation
-    Separate identities according to their purpose. A root, a professional, a personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities).
+    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities).
 
 > - Dedicated Email Addresses
-    Use separate email addresses for root (primary email), professional (work, school, etc), personal (social media, etc) and disposable identities.
+    Use separate email addresses for root (primary email), professional (work, school, etc), personal (social media, etc) and disposable identity.
 
 > - Email Provider Selection
     Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
