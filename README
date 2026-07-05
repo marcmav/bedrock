@@ -12,7 +12,7 @@ The Defense-in-Depth Model
 
 Security is engineered sequentially from the system's lowest trust boundary outward to my digital identity. If a lower layer is compromised, the structural integrity of every layer above it is void.
 
-[ Layer 5: Alias ] --- Email, Personas
+[ Layer 5: Alias ] --- Digital Identities, Email Accounts, Online Accounts
     [ Layer 4: Credentials ] --- Password Manager, Authenticator
         [ Layer 3: Gateway ] --- Browser, Search Engine
             [ Layer 2: Network ] --- Firewall, DNS, VPN
