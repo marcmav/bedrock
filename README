@@ -401,14 +401,15 @@ Controls
 Layer 5: Alias
 ==============
 
-The Alias layer is the outermost boundary of the security model. It defines how identity is projected across the internet through email addresses, usernames, profiles and any other persistent identifier tied to online activity. If this layer is misconfigured, real identity leaks outward and becomes permanently linkable to accounts, behaviors and actions across unrelated services.
+The Alias layer is the outermost boundary of the security model. It defines how identity is projected across the internet through email addresses, online accounts, public personas and any other persistent identifier tied to online activity. If this layer is misconfigured, real identity leaks outward and becomes permanently linkable to accounts, behaviors and actions across unrelated services.
 
 ----------
 Components
 ----------
 
-> - Email
-> - Personas
+> - Email Accounts
+> - Digital Personas
+> - Online Accounts
 
 ---------
 Principle
@@ -420,14 +421,47 @@ Your real identity is a liability on the open internet. Every service that knows
 Objective
 ---------
 
-Isolate real identity from online activity by maintaining distinct, purpose-bound personas and routing all external communication through aliases that can be independently revoked without affecting any other account or identity.
+Establish compartmentalized digital identities that minimize trust relationships, limit the impact of compromise and preserve long-term control over every account.
 
 --------
 Controls
 --------
 
+> - Identity Separation
+Separate identities according to their purpose. A root, a professional, a personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities).
+
+> - Dedicated Email Addresses
+    Use separate email addresses for root (primary email), professional (work, school, etc), personal (social media, etc) and disposable identities.
+
 > - Email Provider Selection
     Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
+
+> - Primary Email Protection
+    The primary email account is the root of account recovery for most services. It must receive the strongest available protections, including unique password, MFA and recovery code storage.
+
+> - Primary Email Exposure Minimization
+    The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
+
+> - Minimal Personal Disclosure
+    Share only the information required to use a service. Optional profile fields should remain empty unless there is a legitimate need.
+
+> - Account Lifecycle Management
+    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
+
+> - Third-Party Authorization Review
+    Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
+
+> - Session Management
+    Periodically review active sessions and revoke devices that are no longer recognized or trusted.
+
+> - Security Notifications
+    Enable login alerts and account security notifications wherever available to detect unauthorized access promptly.
+
+> - Breach Response
+    If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions, review recovery settings and notify affected services where appropriate.
+
+> - Identity Consistency
+    Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
 
 > - Email Aliasing
     Never expose a primary email address to external services. Route all registrations and communications through disposable or purpose-bound aliases that forward to the primary inbox.
@@ -437,12 +471,6 @@ Controls
 
 > - Alias Revocation
     Any alias that receives spam, is involved in a breach or is no longer required must be immediately revoked. Revocation must have no impact on any other alias or the primary inbox.
-
-> - Real Email Exposure Minimization
-    The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
-
-> - Persona Separation
-    Maintain distinct personas for distinct contexts. A professional persona, a personal persona and an anonymous persona must never share identifiers or linked accounts.
 
 > - Username Uniqueness
     Use a unique username per service where possible. Reusing usernames across services allows trivial cross-platform identity correlation.
@@ -464,3 +492,4 @@ Controls
 
 > - Public Profile Minimization
     Minimize the amount of personal information present on any public-facing profile. Every field completed is a data point available to scrapers, advertisers and adversaries.
+
