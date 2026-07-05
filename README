@@ -401,7 +401,7 @@ Controls
 Layer 5: Alias
 ==============
 
-The Alias layer is the outermost boundary of the security model. It defines how identity is projected across the internet through email addresses, online accounts, public personas and any other persistent identifier tied to online activity. If this layer is misconfigured, real identity leaks outward and becomes permanently linkable to accounts, behaviors and actions across unrelated services.
+The Alias layer is the outermost boundary of the security model. It defines how identity is projected across the internet through email addresses, online accounts, public personas and any other persistent identifier tied to online activity. If this layer is compromised or poorly compartmentalized, an adversary can correlate identities, recover accounts or propagate compromise across unrelated services.
 
 ----------
 Components
@@ -410,8 +410,6 @@ Components
 > - Digital Identities
 > - Email Accounts
 > - Online Accounts
-
-Scope: Didn't Mention an alias generator because i use a dedicated anonymous identity and disposable email for all junk instead of different alias that will still forward to the same place.
 
 ---------
 Principle
@@ -433,7 +431,7 @@ Controls
     Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service exposes only that alias, not the primary address or any other account).
 
 > - Email Provider Selection
-    Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
+    Use an open-source, security-focused email provider that supports strong account protection, modern authentication mechanisms and transparent privacy practices based outside high-surveillance jurisdictions.
 
 > - Dedicated Email Addresses
     Use separate email addresses for root (primary email), professional (work, school, etc), personal (social media, etc) and disposable identity.
@@ -445,7 +443,7 @@ Controls
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
 
 > - Phone Number Exposure
-    Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
+    Avoid associating your primary phone number with services unless required. Where appropriate, use separate numbers for different trust domains.
 
 > - Minimal Personal Disclosure
     When creating accounts, provide the absolute bare minimum required data to satisfy the system registration constraints. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
@@ -465,9 +463,17 @@ Controls
 > - Account Decommissioning
     Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover. (Dormant accounts expand the attack surface and are often forgotten).
 
+> - Recovery Path Review
+    Periodically verify recovery email addresses, recovery phone numbers and trusted devices. Every recovery path must remain accurate, intentional and under your control.
+
 > - Third-Party Authorization Review
     Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
 
 > - Session Management
     Periodically review active sessions and revoke devices that are no longer recognized or trusted.
 
+..........................................................................................
+
+Trust is cumulative. Every layer inherits its trust from the integrity of the layer beneath it. No control implemented above a compromised layer can fully compensate for the loss of trust below it.
+
+..........................................................................................
