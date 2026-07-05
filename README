@@ -411,6 +411,8 @@ Components
 > - Email Accounts
 > - Online Accounts
 
+Scope: Didn't Mention an alias generator because i use a dedicated disposable email for all junk instead of different alias that will still forward to the same place.
+
 ---------
 Principle
 ---------
@@ -446,7 +448,7 @@ Controls
     Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
 
 > - Minimal Personal Disclosure
-    Minimize the amount of personal information present on any public-facing profile. Share only the information required to use the service. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
+    When creating accounts, provide the absolute bare minimum required data to satisfy the system registration constraints. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
 
 > - Identity Consistency
     Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
