@@ -420,7 +420,7 @@ Your real identity is a liability on the open internet. Every service that knows
 Objective
 ---------
 
-Isolate real identity from online activity by maintaining distinct, purpose bound personas and routing all external communication through aliases that can be independently revoked without affecting any other account or identity.
+Isolate real identity from online activity by maintaining distinct, purpose-bound personas and routing all external communication through aliases that can be independently revoked without affecting any other account or identity.
 
 --------
 Controls
@@ -430,7 +430,7 @@ Controls
     Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
 
 > - Email Aliasing
-    Never expose a primary email address to external services. Route all registrations and communications through disposable or purpose-bound aliases that forward to the primary inbox. (SimpleLogin, Addy.io).
+    Never expose a primary email address to external services. Route all registrations and communications through disposable or purpose-bound aliases that forward to the primary inbox.
 
 > - Alias Compartmentalization
     Each alias must serve a single purpose or category. A breach of one service exposes only that alias, not the primary address or any other account.
@@ -442,7 +442,7 @@ Controls
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
 
 > - Persona Separation
-    Maintain distinct personas for distinct contexts. A professional persona, a personal persona and an anonymous persona must never share identifiers, writing style, behavioral patterns or linked accounts.
+    Maintain distinct personas for distinct contexts. A professional persona, a personal persona and an anonymous persona must never share identifiers or linked accounts.
 
 > - Username Uniqueness
     Use a unique username per service where possible. Reusing usernames across services allows trivial cross-platform identity correlation.
