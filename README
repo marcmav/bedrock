@@ -407,8 +407,8 @@ The Alias layer is the outermost boundary of the security model. It defines how 
 Components
 ----------
 
+> - Digital Identities
 > - Email Accounts
-> - Digital Personas
 > - Online Accounts
 
 ---------
@@ -443,16 +443,7 @@ Controls
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
 
 > - Minimal Personal Disclosure
-    Share only the information required to use a service. Optional profile fields should remain empty unless there is a legitimate need.
-
-> - Account Lifecycle Management
-    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
-
-> - Third-Party Authorization Review
-    Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
-
-> - Session Management
-    Periodically review active sessions and revoke devices that are no longer recognized or trusted.
+    Minimize the amount of personal information present on any public-facing profile. Share only the information required to use the service. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers, advertisers and adversaries).
 
 > - Security Notifications
     Enable login alerts and account security notifications wherever available to detect unauthorized access promptly.
@@ -490,6 +481,12 @@ Controls
 > - Phone Number Exposure
     Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
 
-> - Public Profile Minimization
-    Minimize the amount of personal information present on any public-facing profile. Every field completed is a data point available to scrapers, advertisers and adversaries.
+> - Account Lifecycle Management
+    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
+
+> - Third-Party Authorization Review
+    Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
+
+> - Session Management
+    Periodically review active sessions and revoke devices that are no longer recognized or trusted.
 
