@@ -427,7 +427,7 @@ Controls
 --------
 
 > - Email Provider Selection
-    Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising. (Proton Mail, Tuta).
+    Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
 
 > - Email Aliasing
     Never expose a primary email address to external services. Route all registrations and communications through disposable or purpose-bound aliases that forward to the primary inbox. (SimpleLogin, Addy.io).
