@@ -428,7 +428,9 @@ Controls
 --------
 
 > - Identity Separation
-    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities).
+    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service).
+
+    Each alias must serve a single purpose or category. A breach of one service exposes only that alias, not the primary address or any other account.
 
 > - Email Provider Selection
     Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
@@ -443,7 +445,10 @@ Controls
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
 
 > - Minimal Personal Disclosure
-    Minimize the amount of personal information present on any public-facing profile. Share only the information required to use the service. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers, advertisers and adversaries).
+    Minimize the amount of personal information present on any public-facing profile. Share only the information required to use the service. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
+
+> - Identity Consistency
+    Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
 
 > - Security Notifications
     Enable login alerts and account security notifications wherever available to detect unauthorized access promptly.
@@ -451,32 +456,14 @@ Controls
 > - Breach Response
     If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions, review recovery settings and notify affected services where appropriate.
 
-> - Identity Consistency
-    Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
-
-> - Email Aliasing
-    Never expose a primary email address to external services. Route all registrations and communications through disposable or purpose-bound aliases that forward to the primary inbox.
-
-> - Alias Compartmentalization
-    Each alias must serve a single purpose or category. A breach of one service exposes only that alias, not the primary address or any other account.
-
-> - Alias Revocation
-    Any alias that receives spam, is involved in a breach or is no longer required must be immediately revoked. Revocation must have no impact on any other alias or the primary inbox.
-
 > - Username Uniqueness
     Use a unique username per service where possible. Reusing usernames across services allows trivial cross-platform identity correlation.
-
-> - Metadata Awareness
-    Be aware that metadata (timestamps, writing patterns, timezone indicators, device fingerprints) can de-anonymize an identity independently of the alias itself. Operational discipline must accompany technical controls.
 
 > - Account Minimization
     Maintain the fewest external accounts necessary. Every account is a potential breach vector and an identity footprint that must be managed indefinitely.
 
 > - Account Decommissioning
     Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover.
-
-> - OAuth & Third-Party Login
-    Never use "Sign in with Google", "Sign in with Apple" or equivalent federated login mechanisms. These link your primary identity account directly to every service you authenticate with and create a single point of failure.
 
 > - Phone Number Exposure
     Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
