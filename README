@@ -428,9 +428,7 @@ Controls
 --------
 
 > - Identity Separation
-    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service).
-
-    Each alias must serve a single purpose or category. A breach of one service exposes only that alias, not the primary address or any other account.
+    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service exposes only that alias, not the primary address or any other account).
 
 > - Email Provider Selection
     Use an open-source, end-to-end encrypted email provider based outside high-surveillance jurisdictions. The provider must have a verified no-log policy and must not scan message content for profiling or advertising.
@@ -444,14 +442,14 @@ Controls
 > - Primary Email Exposure Minimization
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
 
+> - Phone Number Exposure
+    Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
+
 > - Minimal Personal Disclosure
     Minimize the amount of personal information present on any public-facing profile. Share only the information required to use the service. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
 
 > - Identity Consistency
     Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
-
-> - Phone Number Exposure
-    Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
 
 > - Account Minimization
     Maintain the fewest external accounts necessary. Every account is a potential breach vector and an identity footprint that must be managed indefinitely.
@@ -463,14 +461,11 @@ Controls
     If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions, review recovery settings and notify affected services where appropriate.
 
 > - Account Decommissioning
-    Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover.
+    Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover. (Dormant accounts expand the attack surface and are often forgotten).
 
 > - Third-Party Authorization Review
     Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
 
 > - Session Management
     Periodically review active sessions and revoke devices that are no longer recognized or trusted.
-
-> - Account Lifecycle Management
-    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
 
