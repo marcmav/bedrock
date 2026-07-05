@@ -450,30 +450,27 @@ Controls
 > - Identity Consistency
     Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
 
+> - Phone Number Exposure
+    Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
+
+> - Account Minimization
+    Maintain the fewest external accounts necessary. Every account is a potential breach vector and an identity footprint that must be managed indefinitely.
+
 > - Security Notifications
     Enable login alerts and account security notifications wherever available to detect unauthorized access promptly.
 
 > - Breach Response
     If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions, review recovery settings and notify affected services where appropriate.
 
-> - Username Uniqueness
-    Use a unique username per service where possible. Reusing usernames across services allows trivial cross-platform identity correlation.
-
-> - Account Minimization
-    Maintain the fewest external accounts necessary. Every account is a potential breach vector and an identity footprint that must be managed indefinitely.
-
 > - Account Decommissioning
     Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover.
-
-> - Phone Number Exposure
-    Avoid registering a real phone number with external services wherever possible. Use a VoIP number or service-specific number for registrations that require phone verification.
-
-> - Account Lifecycle Management
-    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
 
 > - Third-Party Authorization Review
     Periodically review applications and services that have been granted access to online accounts. Revoke access that is no longer required.
 
 > - Session Management
     Periodically review active sessions and revoke devices that are no longer recognized or trusted.
+
+> - Account Lifecycle Management
+    Close or remove accounts that are no longer used. Dormant accounts expand the attack surface and are often forgotten.
 
