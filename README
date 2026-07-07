@@ -11,7 +11,7 @@ While some controls incidentally improve privacy, every control in bedrock is in
 Defense-in-Depth Model
 ======================
 
-Security is engineered sequentially from the system's lowest trust boundary outward to my digital identity. If a lower layer is compromised, the structural integrity of every layer above it is void.
+Security is engineered sequentially from the system's lowest trust boundary outward to its digital identities. Each layer establishes the trust assumptions required by the layer above it. If a lower layer is compromised, every layer that depends on it must also be considered untrusted.
 
 [ Layer 5: Alias ] --- Digital Identities, Email Accounts, Online Accounts
     [ Layer 4: Credentials ] --- Password Manager, Authenticator
