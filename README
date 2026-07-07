@@ -13,30 +13,12 @@ Defense-in-Depth Model
 
 Security is engineered sequentially from the system's lowest trust boundary outward to its digital identities. Each layer establishes the trust assumptions required by the layer above it. If a lower layer is compromised, every layer that depends on it must also be considered untrusted.
 
-[ Layer 5 ─ Alias ]
-    └─ Digital Identities
-    └─ Email Accounts
-    └─ Online Accounts
-
-        [ Layer 4 ─ Credentials ]
-            └─ Password Manager
-            └─ Authenticator
-
-                [ Layer 3 ─ Gateway ]
-                    └─ Browser
-                    └─ Search Engine
-
-                        [ Layer 2 ─ Network ]
-                            └─ Firewall
-                            └─ DNS
-                            └─ VPN
-
-                                [ Layer 1 ─ Compute ]
-                                    └─ Operating System
-
-                                        [ Layer 0 ─ Core ]
-                                            └─ Firmware
-                                            └─ Bootloader
+[ Layer 5: Alias ] --- Digital Identities, Email Accounts, Online Accounts
+    [ Layer 4: Credentials ] --- Password Manager, Authenticator
+        [ Layer 3: Gateway ] --- Browser, Search Engine
+            [ Layer 2: Network ] --- Firewall, DNS, VPN
+                [ Layer 1: Compute ] --- Operating System
+                    [ Layer 0: Core ] --- Firmware, Bootloader
 
 =============
 Layer 0: Core
