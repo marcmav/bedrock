@@ -11,7 +11,9 @@ While some controls incidentally improve privacy, every control in bedrock is in
 Defense-in-Depth Model
 ======================
 
-Security is engineered sequentially from the system's lowest trust boundary outward to its digital identities. Each layer establishes the trust assumptions required by the layer above it. If a lower layer is compromised, every layer that depends on it must also be considered untrusted.
+Defense-in-Depth is a security architecture principle that layers independent controls across different domains so that no single point of failure results in total compromise. Each layer assumes the layers above it are untrusted and the layers below it are already hardened. A threat that bypasses one control must still defeat every subsequent layer to reach its objective.
+
+Bedrock implements this model sequentially from the system's lowest trust boundary outward to digital identities. If a lower layer is compromised, the structural integrity of every layer above it is void.
 
 [ Layer 5: Alias ] --- Digital Identities, Email Accounts, Online Accounts
     [ Layer 4: Credentials ] --- Password Manager, Authenticator
