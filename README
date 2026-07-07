@@ -4,7 +4,8 @@ bedrock
 
 A playbook of the architectural root of my security model. It defines the foundational layers, principles and controls that every system must satisfy before it can be considered trusted.
 
-Scope: Bedrock defines the security architecture for personal computers (the layers I can consistently control on every computer I own), infrastructure outside the host (e.g., routers, security keys or any other external hardware that complements the system functionality) is intentionally out of scope. While some controls also improve privacy, every recommendation in Bedrock is included because it strengthens the system's security.
+Scope: Bedrock defines the security architecture for personal computers (the layers I can consistently control on every computer I own), infrastructure outside the host (e.g., routers, security keys or any other external hardware that complements the system functionality) is intentionally out of scope.
+While some controls also improve privacy, every recommendation in Bedrock is included because it strengthens the system's security.
 
 ==========================
 The Defense-in-Depth Model
