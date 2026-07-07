@@ -7,9 +7,9 @@ A playbook of the architectural root of my security model. It defines the founda
 Scope: Bedrock defines the security architecture for personal computers (the layers I can consistently control on every computer I own), infrastructure outside the host (e.g., routers, security keys or any other external hardware that complements the system functionality) is intentionally out of scope.
 While some controls also improve privacy, every recommendation in bedrock is included because it strengthens the system's security.
 
-==========================
+======================
 Defense-in-Depth Model
-==========================
+======================
 
 Security is engineered sequentially from the system's lowest trust boundary outward to my digital identity. If a lower layer is compromised, the structural integrity of every layer above it is void.
 
