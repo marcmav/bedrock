@@ -8,7 +8,7 @@ Scope: Bedrock defines the security architecture for personal computers (the lay
 While some controls also improve privacy, every recommendation in bedrock is included because it strengthens the system's security.
 
 ==========================
-The Defense-in-Depth Model
+Defense-in-Depth Model
 ==========================
 
 Security is engineered sequentially from the system's lowest trust boundary outward to my digital identity. If a lower layer is compromised, the structural integrity of every layer above it is void.
