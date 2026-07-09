@@ -58,6 +58,9 @@ Controls
 > - Firmware Password
     Protects firmware settings from unauthorized modification. (Without it, anyone with physical access can disable Secure Boot, change the boot order and boot from external media).
 
+> - UEFI over Legacy Boot / CSM
+    Use UEFI boot mode instead of legacy BIOS compatibility mode. UEFI provides the foundation for modern platform security features such as Secure Boot and TPM-based trust verification. Legacy boot paths should only be enabled when required for compatibility reasons.
+
 > - Secure Boot
     Enabling it ensures only cryptographically signed bootloaders are allowed to execute. (Prevents bootkits and rootkits from loading before the OS has a chance to defend itself).
 
@@ -82,6 +85,9 @@ Controls
 > - Single Trusted Boot Path
     Maintain a single, intentional boot path. Every additional bootloader, operating system, or boot entry increases complexity and attack surface.
 
+execution prevention = memory protection
+computrace module activation
+tamper execution
 
 ================
 Layer 1: Compute
