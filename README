@@ -58,8 +58,8 @@ Controls
 > - Firmware Password
     Protects firmware settings from unauthorized modification. (Without it, anyone with physical access can disable Secure Boot, change the boot order and boot from external media).
 
-> - UEFI over Legacy Boot (CSM)
-    Use UEFI boot mode instead of legacy BIOS compatibility mode. UEFI provides the foundation for modern platform security features such as Secure Boot and TPM-based measured boot. CSM must be disabled entirely unless required for compatibility reasons, and re-disabled immediately after.
+> - Native UEFI Boot Mode
+    Enforce native UEFI boot mode instead of legacy BIOS compatibility mode (CSM). UEFI provides the foundation for modern platform security features such as Secure Boot and TPM-based measured boot. CSM must be disabled unless required for compatibility reasons and should be re-disabled immediately after use. Legacy boot paths increase complexity and bypass modern platform security mechanisms, therefore they should remain disabled whenever possible.
 
 > - Secure Boot
     Enabling it ensures only cryptographically signed bootloaders are allowed to execute. (Prevents bootkits and rootkits from loading before the OS has a chance to defend itself).
