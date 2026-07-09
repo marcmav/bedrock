@@ -67,7 +67,7 @@ Controls
     Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified.
 
 > - TPM (Trusted Platform Module)
-    If supported, the TPM can securely store encryption keys and binds them to the hardware state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
+    If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
