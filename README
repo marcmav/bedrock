@@ -74,7 +74,7 @@ Controls
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
 
 > - Memory Execution Protection
-    Ensure processor-level execution prevention mechanisms such as NX/XD are enabled. Memory regions containing data should not be executable unless explicitly required. (This reduces the impact of memory corruption vulnerabilities by preventing attackers from executing arbitrary code from non-executable memory regions).
+    Enable processor-level execution prevention (NX/XD bit) in the firmware settings. This marks data memory regions as non-executable, preventing attackers from injecting and executing arbitrary code in memory regions that should only contain data. (A foundational mitigation against buffer overflow and memory corruption exploits, most modern processors support it but it must be explicitly enabled in firmware).
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
