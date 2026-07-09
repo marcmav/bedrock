@@ -73,6 +73,9 @@ Controls
 > - TPM (Trusted Platform Module)
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
 
+> - Memory Execution Protection
+    Ensure processor-level execution prevention mechanisms such as NX/XD are enabled. Memory regions containing data should not be executable unless explicitly required. (This reduces the impact of memory corruption vulnerabilities by preventing attackers from executing arbitrary code from non-executable memory regions).
+
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
 
@@ -85,7 +88,6 @@ Controls
 > - Single Trusted Boot Path
     Maintain a single, intentional boot path. Every additional bootloader, operating system, or boot entry increases complexity and attack surface.
 
-execution prevention = memory protection
 computrace module activation
 tamper execution
 
@@ -136,6 +138,9 @@ Controls
     Require authentication before granting access to the operating system. This protects against unauthorized local access after the storage volume has been unlocked.
     Disk encryption protects data at rest, but it does not replace user authentication. Once the operating system is running and the encrypted volume is accessible, access control depends on the operating system's authentication mechanisms.
 */
+
+> - Operating System Mitigation Support
+    Ensure the operating system and kernel utilize available hardware security features such as NX/XD, ASLR and other memory protection mechanisms. Hardware capabilities provide the foundation, but the operating system is responsible for enforcing them.
 
 > - System Updates
     The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their impact once patched).
