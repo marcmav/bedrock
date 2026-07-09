@@ -67,14 +67,14 @@ Controls
 > - Boot Order
     Restrict boot sources to only those required for normal operation. External and network boot should be disabled when not needed. (Disabling USB and network boot eliminates the ability to boot a live OS or run cold boot attacks against the machine)
 
+> - Memory Execution Protection
+    Ensure processor-level execution prevention such as Intel XD (Execute Disable) or AMD NX (No-eXecute) are enabled in the firmware settings. These features enforce memory execution boundaries by preventing regions intended for data storage from being executed unless explicitly permitted. (A foundational mitigation against buffer overflow and memory corruption exploits, most modern processors support it but it must be explicitly enabled in firmware).
+
 > - Component Minimization
     Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified.
 
 > - TPM (Trusted Platform Module)
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
-
-> - Memory Execution Protection
-    Ensure processor-level execution prevention such as Intel XD (Execute Disable) or AMD NX (No-eXecute) are enabled in the firmware settings. These features enforce memory execution boundaries by preventing regions intended for data storage from being executed unless explicitly permitted. (A foundational mitigation against buffer overflow and memory corruption exploits, most modern processors support it but it must be explicitly enabled in firmware).
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
