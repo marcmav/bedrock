@@ -33,6 +33,7 @@ Components
 ----------
 
 > - Firmware
+> - TPM
 > - Bootloader
 
 ---------
@@ -72,8 +73,11 @@ Controls
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
 
-> - Bootloader Integrity
-    Ensures boot configuration has not been tampered with between boots. (Without it, kernel parameters can be appended at boot to bypass OS-level security controls entirely).
+> - Bootloader Configuration Integrity
+    Ensures boot configuration has not been tampered with between boots. (The bootloader configuration controls how the operating system starts and can be abused to bypass OS-level security mechanisms if altered). Use mechanisms that authenticate or verify configuration changes before they are accepted, such as signed/enrolled configuration files, bootloader passwords or strict file permissions depending on the bootloader implementation.
+
+> - Bootloader Configuration Integrity
+    Ensure bootloader configuration changes require explicit authorization. Bootloader configuration files should not be freely modifiable without administrative control, as unauthorized changes can alter kernel parameters, disable security features or modify the startup process.
 
 > - Single Trusted Boot Path
     Maintain a single, intentional boot path. Every additional bootloader, operating system, or boot entry increases complexity and attack surface.
