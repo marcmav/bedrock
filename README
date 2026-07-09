@@ -85,9 +85,6 @@ Controls
 > - Single Trusted Boot Path
     Maintain a single, intentional boot path. Every additional bootloader, operating system, or boot entry increases complexity and attack surface.
 
-computrace module activation
-tamper execution
-
 ================
 Layer 1: Compute
 ================
