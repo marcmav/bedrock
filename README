@@ -20,7 +20,7 @@ Bedrock implements this model sequentially from the system's lowest trust bounda
         [ Layer 3: Gateway ] --- Browser, Search Engine
             [ Layer 2: Network ] --- Firewall, DNS, VPN
                 [ Layer 1: Compute ] --- Operating System
-                    [ Layer 0: Core ] --- Firmware, TPM, Bootloader
+                    [ Layer 0: Core ] --- Firmware, Bootloader
 
 =============
 Layer 0: Core
@@ -33,7 +33,6 @@ Components
 ----------
 
 > - Firmware
-> - TPM
 > - Bootloader
 
 ---------
