@@ -119,8 +119,13 @@ Controls
 > - Full-Disk Encryption
     Protect data at rest from unauthorized access with a strong and unique password at boot required to decrypt it. (Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions).
 // TODO document about how user authentication must be paired with full-disk encryption and TPM
+/* possible states
 > - User Authentication
     Require every user account to authenticate before accessing the operating system. Authentication should use a strong password or passphrase, and biometric methods should be treated as convenience features rather than primary authentication mechanisms.
+> - User Authentication
+    Require authentication before granting access to the operating system. This protects against unauthorized local access after the storage volume has been unlocked.
+    Disk encryption protects data at rest, but it does not replace user authentication. Once the operating system is running and the encrypted volume is accessible, access control depends on the operating system's authentication mechanisms.
+*/
 
 > - System Updates
     The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their impact once patched).
