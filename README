@@ -73,10 +73,10 @@ Controls
     Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified.
 
 > - TPM (Trusted Platform Module)
-    If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. (Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup). The TPM should be combined with a user-authenticated factor at boot. (TPM-only protection primarily defends against offline attacks on a removed storage device, whereas TPM + user authentication also helps protect the system if the entire machine is stolen).
+    If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup. This allows the platform to verify the integrity of the boot chain before releasing protected secrets, helping detect unauthorized modifications to firmware, the bootloader or other boot components.
 
-> - User Authentication
-    Require authentication before granting access to the operating system decryption key. Full-disk encryption proves the boot chain is intact but it does not verify who is sitting at the machine. User authentication is a separate and necessary control that restricts who can interact with the running system after the volume has been decrypted. (Lock the session on inactivity and require re-authentication on resume).
+> - Decryption Key Protection
+    Protect storage decryption keys with both platform integrity verification and user authentication. The decryption key should only be released when the measured boot state is trusted and a valid authentication factor (e.g., PIN or passphrase) has been provided. Platform integrity alone does not verify the user, and user authentication alone does not verify the platform.
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
@@ -126,10 +126,10 @@ Controls
     Disable or remove services that are not required or that won't be used. (Every running service is an attack surface).
 
 > - Full-Disk Encryption
-    Encrypt all data at rest. Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions, file ownership or any software access control above this layer. When combined with TPM-based key binding, the decryption key is sealed to the measured boot state and released only when the boot chain is verified as unmodified. (See Layer 0: Core for TPM and passphrase integration).
+    Encrypt all data at rest. Without it, physical access to the storage device is sufficient to bypass operating system access controls and recover stored data. If supported, combine full-disk encryption with TPM-based key protection as described in Layer 0.
 
 > - User Authentication
-    Require authentication before granting access to the operating system session. Full-disk encryption proves the boot chain is intact but it does not verify who is sitting at the machine after the volume has been decrypted. (Lock the session on inactivity and require re-authentication on resume).
+    Require authentication before granting access to the operating system session. Full-disk encryption protects data while the system is powered off, but it does not verify the identity of the person using the machine after the encrypted volume has been unlocked. (Automatically lock inactive sessions and require re-authentication after suspend, hibernation or screen lock).
 
 > - Operating System Mitigation Support
     Ensure the operating system and kernel utilize available hardware security features such as NX/XD, ASLR and other memory protection mechanisms. Hardware capabilities provide the foundation, but the operating system is responsible for enforcing them.
