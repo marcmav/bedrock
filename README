@@ -89,7 +89,7 @@ Controls
 Layer 1: Compute
 ================
 
-The Compute layer is the operating system environment. It is the core software execution layer with unmediated control over hardware resources, memory spaces, and system state. It enforces access controls, manages process isolation and mediates every interaction between software and hardware. If this layer is compromised, no application, credential or identity above it can be trusted.
+The Compute layer is the operating system. It establishes the trusted execution environment upon which every user process, application and security control depends. It is responsible for resource management, privilege enforcement, process isolation and mediating access between software and hardware. If this layer is compromised, every software component and security control above it must also be considered untrusted.
 
 ----------
 Components
