@@ -147,7 +147,7 @@ Controls
     Ensure the operating system and kernel enforce available exploit mitigation mechanisms such as Address Space Layout Randomization (ASLR), hardware-backed execution prevention (NX/XD) and other memory protection technologies. These protections build upon the hardware capabilities established in Layer 0 and significantly increase the difficulty of exploiting memory corruption vulnerabilities.
 
 > - SSH Hardening
-    If remote administration is required, use key-based authentication only, disable password authentication and direct root login.
+    If remote administration is required, use public key authentication, disable password authentication, prohibit direct root login and expose the SSH service only when necessary.
 
 > - Mandatory Access Control
     Enforce process-level access controls beyond standard Unix permissions. (Limits the blast radius of a compromised process).
