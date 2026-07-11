@@ -131,9 +131,6 @@ Controls
 > - User Authentication
     Require user authentication before granting access to the operating system session. Full-disk encryption protects data while the system is powered off, but it does not verify the identity of the person using the machine after the encrypted volume has been unlocked. Automatically lock inactive sessions and require re-authentication after suspend, hibernation or screen lock.
 
-> - Exploit Mitigations
-    Ensure the operating system and kernel enforce available exploit mitigation mechanisms such as Address Space Layout Randomization (ASLR), hardware-backed execution prevention (NX/XD) and other memory protection technologies. These protections build upon the hardware capabilities established in Layer 0 and significantly increase the difficulty of exploiting memory corruption vulnerabilities.
-
 > - System Updates
     The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their impact once patched).
 
@@ -145,6 +142,9 @@ Controls
 
 > - Least Privilege
     Daily activities should be performed as a standard user. Root privileges should only be used when required.
+
+> - Exploit Mitigations
+    Ensure the operating system and kernel enforce available exploit mitigation mechanisms such as Address Space Layout Randomization (ASLR), hardware-backed execution prevention (NX/XD) and other memory protection technologies. These protections build upon the hardware capabilities established in Layer 0 and significantly increase the difficulty of exploiting memory corruption vulnerabilities.
 
 > - SSH Hardening
     If remote administration is required, use key-based authentication only, disable password authentication and direct root login.
