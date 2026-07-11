@@ -76,7 +76,7 @@ Controls
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup. This allows the platform to verify the integrity of the boot chain before releasing protected secrets, helping detect unauthorized modifications to firmware, the bootloader or other boot components.
 
 > - Decryption Key Protection
-    Require a passphrase in addition to TPM verification before the decryption key is released. The key should only be released when both the measured boot state is trusted and a valid authentication factor (e.g., a PIN or passphrase) has been provided. Platform integrity alone does not verify the user, and user authentication alone does not verify the platform.
+    Require a passphrase in addition to TPM verification before the decryption key is released. The key should only be released when both the measured boot state is trusted and a valid authentication factor has been provided. Platform integrity alone does not verify the user and user authentication alone does not verify the platform.
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
