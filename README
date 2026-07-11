@@ -131,8 +131,8 @@ Controls
 > - User Authentication
     Require user authentication before granting access to the operating system session. Full-disk encryption protects data while the system is powered off, but it does not verify the identity of the person using the machine after the encrypted volume has been unlocked. Automatically lock inactive sessions and require re-authentication after suspend, hibernation or screen lock.
 
-> - Operating System Mitigation Support
-    Ensure the operating system and kernel utilize available hardware security features such as NX/XD, ASLR and other memory protection mechanisms. Hardware capabilities provide the foundation, but the operating system is responsible for enforcing them.
+> - Exploit Mitigations
+    Ensure the operating system and kernel enforce available exploit mitigation mechanisms such as Address Space Layout Randomization (ASLR), hardware-backed execution prevention (NX/XD) and other memory protection technologies. These protections build upon the hardware capabilities established in Layer 0 and significantly increase the difficulty of exploiting memory corruption vulnerabilities.
 
 > - System Updates
     The operating system and installed software must be updated regularly. (Vulnerabilities lose much of their impact once patched).
