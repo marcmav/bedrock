@@ -76,7 +76,7 @@ Controls
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup. This allows the platform to verify the integrity of the boot chain before releasing protected secrets, helping detect unauthorized modifications to firmware, the bootloader or other boot components.
 
 > - Decryption Key Protection
-    Protect storage decryption keys with both platform integrity verification and user authentication. The decryption key should only be released when the measured boot state is trusted and a valid authentication factor (e.g., PIN or passphrase) has been provided. Platform integrity alone does not verify the user, and user authentication alone does not verify the platform.
+    Require a passphrase in addition to TPM verification before the decryption key is released. The key should only be released when both the measured boot state is trusted and a valid authentication factor (e.g., a PIN or passphrase) has been provided. Platform integrity alone does not verify the user, and user authentication alone does not verify the platform.
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
@@ -129,7 +129,7 @@ Controls
     Encrypt all data at rest. Without it, physical access to the storage device is sufficient to bypass operating system access controls and recover stored data. If supported, combine full-disk encryption with TPM-based key protection as described in Layer 0.
 
 > - User Authentication
-    Require authentication before granting access to the operating system session. Full-disk encryption protects data while the system is powered off, but it does not verify the identity of the person using the machine after the encrypted volume has been unlocked. (Automatically lock inactive sessions and require re-authentication after suspend, hibernation or screen lock).
+    Require user authentication before granting access to the operating system session. Full-disk encryption protects data while the system is powered off, but it does not verify the identity of the person using the machine after the encrypted volume has been unlocked. Automatically lock inactive sessions and require re-authentication after suspend, hibernation or screen lock.
 
 > - Operating System Mitigation Support
     Ensure the operating system and kernel utilize available hardware security features such as NX/XD, ASLR and other memory protection mechanisms. Hardware capabilities provide the foundation, but the operating system is responsible for enforcing them.
