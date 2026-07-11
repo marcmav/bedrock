@@ -123,15 +123,10 @@ Controls
     Disable or remove services that are not required or that won't be used. (Every running service is an attack surface).
 
 > - Full-Disk Encryption
-    Protect data at rest from unauthorized access with a strong and unique password at boot required to decrypt it. (Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions).
-// TODO document about how user authentication must be paired with full-disk encryption and TPM
-/* possible states
+    Encrypt all data at rest from unauthorized access on inactivity. Without it, physical access to the drive is sufficient to read all data regardless of OS-level permissions, file ownership or any software access control above this layer. When combined with TPM-based key binding, the decryption key is sealed to the measured boot state and released only when the boot chain is verified as unmodified. (See Layer 0: Core for TPM and passphrase integration).
+
 > - User Authentication
-    Require every user account to authenticate before accessing the operating system. Authentication should use a strong password or passphrase, and biometric methods should be treated as convenience features rather than primary authentication mechanisms.
-> - User Authentication
-    Require authentication before granting access to the operating system. This protects against unauthorized local access after the storage volume has been unlocked.
-    Disk encryption protects data at rest, but it does not replace user authentication. Once the operating system is running and the encrypted volume is accessible, access control depends on the operating system's authentication mechanisms.
-*/
+    Require user authentication before granting access to the operating system decryption key. Full-disk encryption proves the boot chain is intact but it does not verify who is sitting at the machine. User authentication is a separate and necessary control that restricts who can interact with the running system after the volume has been decrypted. (Lock the session on inactivity and require re-authentication on resume).
 
 > - Operating System Mitigation Support
     Ensure the operating system and kernel utilize available hardware security features such as NX/XD, ASLR and other memory protection mechanisms. Hardware capabilities provide the foundation, but the operating system is responsible for enforcing them.
