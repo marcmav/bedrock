@@ -92,7 +92,7 @@ Controls
 Layer 1: Host
 ================
 
-The Host layer is the operating system. It establishes the trusted local execution environment upon which every user process, application, and security control depends. It is responsible for system configuration, resource management, privilege enforcement, process isolation, and mediating access between user-space software and the underlying hardware. If this layer is compromised, every software component and security control above it must also be considered untrusted.
+The Host layer is the operating system. It establishes the trusted execution environment upon which every user process, application, and security control depends. It is responsible for system configuration, resource management, privilege enforcement, process isolation, and mediating access between user-space software and the underlying hardware. If this layer is compromised, every software component and security control above it must also be considered untrusted.
 
 ----------
 Components
