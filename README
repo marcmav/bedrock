@@ -88,9 +88,9 @@ Controls
     Maintain a single, intentional boot path. Every additional bootloader, operating system, or boot entry increases complexity and attack surface.
 
 
-================
+=============
 Layer 1: Host
-================
+=============
 
 The Host layer is the operating system. It establishes the trusted execution environment upon which every user process, application, and security control depends. It is responsible for system configuration, resource management, privilege enforcement, process isolation, and mediating access between user-space software and the underlying hardware. If this layer is compromised, every software component and security control above it must also be considered untrusted.
 
@@ -229,9 +229,9 @@ Controls
     Prefer protocols that provide authentication and encryption by default. Avoid deprecated or insecure protocols whenever modern alternatives exist.
 
 
-================
-Layer 3: Gateway
-================
+==================
+Layer 3: Interface
+==================
 
 The Gateway layer is the point where the machine crosses into the open internet. It consists of the browser and search engine, the two primary interfaces through which external content is requested, rendered and interacted with. If this layer is misconfigured or untrusted, adversarial content reaches the machine regardless of how well the layers below it are hardened.
 
