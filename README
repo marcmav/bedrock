@@ -160,10 +160,10 @@ Controls
 
 
 ================
-Layer 2: Network
+Layer 2: Gateway
 ================
 
-The Network layer controls how the machine communicates with external systems. It is the boundary between the local environment and the outside world. A misconfigured or unmonitored network layer exposes every layer above it to remote threats regardless of how well they are hardened.
+The Gateway layer controls how the machine communicates with external systems. It is the boundary between the local environment and the outside world. A misconfigured or unmonitored Gateway exposes every layer above it to remote threats regardless of how well they are hardened.
 
 ----------
 Components
