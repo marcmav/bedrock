@@ -205,13 +205,13 @@ Controls
     Validate DNS responses are cryptographically signed and have not been tampered with in transit. (Prevents DNS spoofing and cache poisoning).
 
 > - DNS Content Filtering
-    Consider using DNS-based filtering to block known malicious domains, trackers and telemetry at the resolution phase before a connection can even be initiated.
+    Use DNS-based filtering to block known malicious domains, trackers, telemetry endpoints and user-defined unwanted domains during name resolution before a connection can be established.
 
 > - DNS Leak Prevention
     Ensure all DNS queries are routed through the configured resolver and not leaking to the ISP or a default system resolver. Verify periodically.
 
 > - VPN
-    Route traffic through a trustworthy, audited and open-source VPN provider with a transparent privacy policy, modern cryptography, and independent security audits when operating on untrusted networks. A VPN shifts trust from the ISP or local network to the VPN provider so choose accordingly.
+    Route traffic through a trustworthy, audited and open-source VPN provider with a transparent privacy policy, modern cryptography and independent security audits when operating on untrusted networks. A VPN shifts trust from the ISP or local network to the VPN provider so choose accordingly.
 
 > - Mandatory Network Kill-Switch
     The system transport routing must enforce a strict kill-switch rule. If the encrypted VPN tunnel drops, all clear-text outbound traffic must be instantly blocked by the firewall rather than leaking over the fallback interface.
