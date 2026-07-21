@@ -308,7 +308,6 @@ Browser activity is separated into distinct profiles according to trust level an
         [ Tier 2: Personal ]
             [ Tier 3: Disposable ]
 
-
 > - Tier 0: Root
     Used exclusively for sensitive authenticated sessions such as banking, government services, password manager and primary email.
     Maximum hardening. No general browsing. No extensions beyond essentials.
@@ -324,8 +323,6 @@ Browser activity is separated into distinct profiles according to trust level an
 > - Tier 3: Disposable
     Used for investigating unknown links, testing untrusted web applications, and performing general and transient clear-net lookup.
     Moderate Hardening. No persistent state.
-
-(Will document further more)
 
 
 ====================
