@@ -252,7 +252,7 @@ The Interface layer is the largest attack surface on a modern machine. It execut
 Objective
 ---------
 
-Deploy a hardened browser that minimizes exposed attack surface, enforces strict identity compartmentalization and safely mediates interactions with untrusted web content.
+Deploy a hardened, open-source browser that minimizes exposed attack surface, enforces strict identity compartmentalization and safely mediates interactions with untrusted web content. Route all search queries through a private, non-profiling search engine that does not correlate queries to an identity.
 
 --------
 Controls
