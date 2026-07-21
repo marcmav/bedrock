@@ -314,7 +314,7 @@ Browser activity is separated into distinct profiles according to trust level an
 
 > - Tier 1: Professional
     Used for operational workflows, technical research, professional accounts and trusted learning resources.
-    Strict hardening. No extensions beyond essentials.
+    Strict hardening. No general browsing. No extensions beyond essentials.
 
 > - Tier 2: Personal
     Used for daily personal tasks, general media consumption and streaming.
