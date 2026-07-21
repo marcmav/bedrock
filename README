@@ -295,7 +295,10 @@ Controls
     Search queries must not be tied to an authenticated account or a persistent identity. Avoid signing into any account within the primary browsing context.
 
 > - Download Verification
-    Treat every downloaded file as untrusted until its integrity and origin have been verified.
+    Treat every downloaded file as untrusted until its integrity, authenticity and origin have been verified before execution.
+
+> - Download Isolation
+    Each browser profile tier must maintain its own dedicated download directory. Files downloaded from one tier must not automatically enter the trust boundary of another. This preserves identity compartmentalization and reduces the risk of accidentally executing untrusted content from a higher-trust browsing context.
 
 --------------
 Profile Tiers
