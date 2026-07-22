@@ -267,6 +267,12 @@ Controls
 > - Extension Minimization
     Install only extensions that serve a defined security or privacy purpose. (Every extension runs with elevated browser privileges and is a potential attack vector).
 
+> - WebRTC Hardening
+    Disable or strictly confine WebRTC.
+
+> - WebRTC Hardening
+    Disable or restrict WebRTC functionality where practical to prevent unnecessary disclosure of local or public network information. (Remote servers and scripts can use WebRTC to discover the machine's true local IP address, bypassing VPN tunnel protection at the Gateway layer).
+
 > - HTTPS Enforcement
     Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
 
