@@ -261,9 +261,6 @@ Controls
 > - Browser Selection
     Use an open-source browser with a transparent security model, an active security patch cadence and advanced process isolation. (Avoid closed-source browsers that enforce opaque profiling or aggregate user tracking data).
 
-> - Browser Hardening
-    Apply a hardened browser configuration that minimizes telemetry, reduces passive fingerprinting and disables unnecessary features.
-
 > - Permission Minimization
     Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
 
@@ -275,9 +272,6 @@ Controls
 
 > - HTTPS Enforcement
     Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
-
-> - WebRTC Hardening
-    Disable or restrict WebRTC functionality where practical to prevent unnecessary disclosure of local or public network information.
 
 > - URL Tracking Stripping
     Strip tracking parameters from URLs before requests are made. (Prevents the linkage of distinct browsing sessions across different services).
