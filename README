@@ -267,23 +267,17 @@ Controls
 > - Extension Minimization
     Install only extensions that serve a defined security or privacy purpose. (Every extension runs with elevated browser privileges and is a potential attack vector).
 
-> - Content Blocking
-    Block advertisements, trackers and known malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only in explicit cases. (Reduces both privacy exposure and the likelihood of malicious script execution).
-
 > - HTTPS Enforcement
     Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
 
 > - URL Tracking Stripping
     Strip tracking parameters from URLs before requests are made. (Prevents the linkage of distinct browsing sessions across different services).
 
-> - Identity Compartmentalization
-    Separate browsing activities into distinct browser profiles or containers according to their trust tier. (This reduces credential exposure, limits session leakage and confines the impact of browser compromise).
+> - Content Blocking
+    Block advertisements, trackers and known malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only in explicit cases. (Reduces both privacy exposure and the likelihood of malicious script execution).
 
 > - Cookie Management
-    Limit persistent cookies and isolate website state. Clear browsing data regularly or automatically according to the profile's trust level.
-
-> - First-Party Isolation & Partitioning
-    Enforce strict state partitioning and cookie isolation. Cookies, local storage and caches must be separated by the top-level domain. (Prevents tracking networks from profiling activities across different websites).
+    Limit persistent cookies. Clear browsing data regularly or automatically according to the profile's trust level.
 
 > - Search Engine Selection
     Use an independent, non-profiling search engine that does not build a behavioral profile or correlate queries to an identity.
@@ -294,11 +288,17 @@ Controls
 > - Download Verification
     Treat every downloaded file as untrusted. Verify its origin, authenticity and integrity before executing, opening or installing it.
 
-> - Download Isolation
-    Each browser profile tier must maintain its own dedicated download directory. Files downloaded from one tier must not automatically enter the trust boundary of another. This preserves identity compartmentalization and reduces the risk of accidentally executing untrusted content from a higher-trust browsing context.
-
 > - Safe Browsing
     Treat all web content as untrusted until proven otherwise. Do not execute software, grant permissions or follow security-sensitive instructions without independently verifying their legitimacy.
+
+> - Identity Compartmentalization
+    Separate browsing activities into distinct browser profiles or containers according to their trust tier. (This reduces credential exposure, limits session leakage and confines the impact of browser compromise).
+
+> - First-Party Isolation & Partitioning
+    Enforce strict state partitioning and cookie isolation. Cookies, local storage and caches must be separated by the top-level domain. (Prevents tracking networks from profiling activities across different websites).
+
+> - Download Isolation
+    Each browser profile tier must maintain its own dedicated download directory. Files downloaded from one tier must not automatically enter the trust boundary of another. This preserves identity compartmentalization and reduces the risk of accidentally executing untrusted content from a higher-trust browsing context.
 
 --------------
 Profile Tiers
