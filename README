@@ -285,6 +285,9 @@ Controls
 > - Content Blocking
     Block advertisements, trackers and known malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only in explicit cases. (Reduces both privacy exposure and the likelihood of malicious script execution).
 
+> - Identity Compartmentalization
+    Separate browsing activities into distinct browser profiles or containers according to their trust tier. (This reduces credential exposure, limits session leakage and confines the impact of browser compromise).
+
 > - Cookie Management
     Limit persistent cookies. Clear browsing data regularly or automatically according to the profile's trust level.
 
@@ -297,14 +300,11 @@ Controls
 > - Download Verification
     Treat every downloaded file as untrusted. Verify its origin, authenticity and integrity before executing, opening or installing it.
 
-> - Safe Browsing
-    Treat all web content as untrusted until proven otherwise. Do not execute software, grant permissions or follow security-sensitive instructions without independently verifying their legitimacy.
-
-> - Identity Compartmentalization
-    Separate browsing activities into distinct browser profiles or containers according to their trust tier. (This reduces credential exposure, limits session leakage and confines the impact of browser compromise).
-
 > - Download Isolation
     Each browser profile tier must maintain its own dedicated download directory. Files downloaded from one tier must not automatically enter the trust boundary of another. This preserves identity compartmentalization and reduces the risk of accidentally executing untrusted content from a higher-trust browsing context.
+
+> - Safe Browsing
+    Treat all web content as untrusted until proven otherwise. Do not execute software, grant permissions or follow security-sensitive instructions without independently verifying their legitimacy.
 
 --------------
 Profile Tiers
