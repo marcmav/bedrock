@@ -261,7 +261,7 @@ Controls
 > - Browser Selection
     Use an open-source browser with a transparent security model, an active security patch cadence and advanced process isolation. (Avoid closed-source browsers that enforce opaque profiling or aggregate user tracking data).
 
-> - Built-in Hardening
+> - Browser Security Configuration
     If supported, apply the built-in hardened browser configuration that minimizes telemetry, reduces browser fingerprinting and disables unnecessary features.
 
 > - Permission Minimization
@@ -273,7 +273,7 @@ Controls
 > - WebRTC Hardening
     Disable or restrict WebRTC functionality where practical to prevent unnecessary disclosure of local or public network information. (Remote servers and scripts can use WebRTC to discover the machine's true local IP address, bypassing VPN tunnel protection at the Gateway layer).
 
-> - Browser Network Transport Security
+> - Browser DNS Integration
     Align browser DNS settings with system DNS policy to prevent DoH leaking past system firewalls. (Use default DNS resolver).
 
 > - HTTPS Enforcement
