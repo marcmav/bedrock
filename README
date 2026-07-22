@@ -262,7 +262,7 @@ Controls
     Use an open-source browser with a transparent security model, an active security patch cadence and advanced process isolation. (Avoid closed-source browsers that enforce opaque profiling or aggregate user tracking data).
 
 > - Browser Hardening
-    Apply a hardened browser configuration that minimizes telemetry, reduces browser fingerprinting and disables unnecessary features.
+    Apply a hardened browser configuration that minimizes telemetry, reduces passive fingerprinting and disables unnecessary features.
 
 > - HTTPS Enforcement
     Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
@@ -282,11 +282,11 @@ Controls
 > - URL Tracking Stripping
     Strip tracking parameters from URLs before requests are made. (Prevents the linkage of distinct browsing sessions across different services).
 
-> - Cookie Management
-    Limit persistent cookies and regularly clear browsing data. Isolate website state to reduce cross-site tracking.
-
 > - Identity Compartmentalization
     Separate browsing activities into distinct browser profiles or containers according to their trust tier. (This reduces credential exposure, limits session leakage and confines the impact of browser compromise).
+
+> - Cookie Management
+    Limit persistent cookies and isolate website state. Clear browsing data regularly or automatically according to the profile's trust level.
 
 > - First-Party Isolation & Partitioning
     Enforce strict state partitioning and cookie isolation. Cookies, local storage and caches must be separated by the top-level domain. (Prevents tracking networks from profiling activities across different websites).
