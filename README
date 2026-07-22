@@ -326,7 +326,7 @@ Browser activity is separated into distinct profiles according to trust level an
 
 > - Tier 1: Professional
     Used for operational workflows, technical research, professional accounts and trusted learning resources.
-    Aggressive hardening. No general browsing. No extensions beyond essentials (Security and productivity extensions permitted).
+    Aggressive hardening. No general browsing. No extensions beyond essentials.
 
 > - Tier 2: Personal
     Used for daily personal tasks, general media consumption and streaming.
@@ -334,7 +334,7 @@ Browser activity is separated into distinct profiles according to trust level an
 
 > - Tier 3: Disposable
     Used for investigating unknown links, testing untrusted web applications, and performing general and transient clear-net lookup.
-    Strict Hardening. No persistent state. Minimal extensions. Disposable identity only. Reset after each session.
+    Moderate Hardening. No persistent state. Minimal extensions. Disposable identity only. Reset after each session.
 
 
 ====================
