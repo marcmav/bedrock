@@ -274,7 +274,7 @@ Controls
     Disable or restrict WebRTC functionality where practical to prevent unnecessary disclosure of local or public network information. (Remote servers and scripts can use WebRTC to discover the machine's true local IP address, bypassing VPN tunnel protection at the Gateway layer).
 
 > - Browser Network Transport Security
-    Align browser DNS settings with system DNS policy to prevent DoH leaking past system firewalls. Enforce Encrypted Client Hello (ECH) where available to obscure domain name metadata during TLS handshakes.
+    Align browser DNS settings with system DNS policy to prevent DoH leaking past system firewalls. (Use default DNS resolver).
 
 > - HTTPS Enforcement
     Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
