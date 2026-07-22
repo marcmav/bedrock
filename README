@@ -261,8 +261,8 @@ Controls
 > - Browser Selection
     Use an open-source browser with a transparent security model, an active security patch cadence and advanced process isolation. (Avoid closed-source browsers that enforce opaque profiling or aggregate user tracking data).
 
-> - Built-in Browser Hardening
-    Apply the built-in hardened browser configuration that minimizes telemetry, reduces browser fingerprinting and disables unnecessary features.
+> - Built-in Hardening
+    If supported, apply the built-in hardened browser configuration that minimizes telemetry, reduces browser fingerprinting and disables unnecessary features.
 
 > - Permission Minimization
     Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
