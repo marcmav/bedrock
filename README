@@ -264,9 +264,6 @@ Controls
 > - Browser Hardening
     Apply a hardened browser configuration that minimizes telemetry, reduces passive fingerprinting and disables unnecessary features.
 
-> - HTTPS Enforcement
-    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
-
 > - Permission Minimization
     Deny browser access to camera, microphone, location and notifications by default. Grant permissions only when explicitly required and revoke immediately after.
 
@@ -275,6 +272,9 @@ Controls
 
 > - Content Blocking
     Block advertisements, trackers and known malicious scripts at the browser level by default as a second layer of defense after DNS filtering, enabling them only in explicit cases. (Reduces both privacy exposure and the likelihood of malicious script execution).
+
+> - HTTPS Enforcement
+    Enforce HTTPS-only mode. Refuse to load resources over unencrypted connections.
 
 > - WebRTC Hardening
     Disable or restrict WebRTC functionality where practical to prevent unnecessary disclosure of local or public network information.
@@ -294,7 +294,7 @@ Controls
 > - Search Engine Selection
     Use an independent, non-profiling search engine that does not build a behavioral profile or correlate queries to an identity.
 
-> - Search Isolation
+> - Search Identity Isolation
     Search queries must not be tied to an authenticated account or a persistent identity. Avoid signing into any account within the primary browsing context.
 
 > - Download Verification
