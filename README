@@ -415,7 +415,7 @@ Controls
     Rotate credentials immediately after suspected compromise or unauthorized disclosure. (Routine password rotation without evidence of compromise is generally unnecessary).
 
 > - Credential Auditing
-    Periodically review stored credentials for duplicates, weak passwords and accounts that are no longer required.
+    Periodically review stored credentials for duplicates, weak passwords and remove credentials for accounts that are no longer required.
 
 > - Breach Monitoring
     Monitor accounts against known breach databases to identify exposed credentials before they are exploited.
