@@ -394,7 +394,7 @@ Controls
     Use time-based one-time passwords (TOTP) as the second factor wherever possible. (SMS-based 2FA is vulnerable to SIM swapping and interception and must be avoided).
 
 > - Authentication Decoupling
-    Consider storing TOTP secrets separately from the primary password vault for high-value accounts. (This reduces the impact of a single vault compromise).
+    Store TOTP secrets separately from the primary password vault for high-value accounts. A single vault compromise must not simultaneously expose both authentication factors. (This reduces the impact of a single vault compromise).
 
 > - 2FA Coverage
     Every account that supports a second factor must have one enabled. Prioritize accounts that protect email, financial services, primary identity and the password manager itself.
@@ -408,7 +408,7 @@ Controls
 > - Credential Verification
     Credentials must never be entered on a domain that has not been independently verified. (Use the password manager's domain matching capabilities to reduce the risk of credential submission to fraudulent websites).
 
-> - Secret Sharing
+> - Secure Credential Transmission
     Credentials must never be transmitted through insecure communication channels. Share secrets only through encrypted mechanisms when absolutely necessary.
 
 > - Credential Rotation
