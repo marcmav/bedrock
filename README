@@ -351,7 +351,7 @@ Components
 Principle
 ---------
 
-Credentials are proof of identity. Every account, service and system trusts whoever presents the correct credential, it cannot distinguish the legitimate user from an adversary who obtained it. A weak password can be brute-forced. A reused password means a single breach propagates access across every service sharing it. An exposed credential silently hands the adversary the same access you have, with no visible indication that the boundary has been crossed.
+Credentials are proof of identity. Every account, service and system trusts whoever presents the correct credential, it cannot distinguish the legitimate user from an adversary who obtained it. A weak password can be brute-forced. A reused password means a single breach propagates access across every service sharing it. Once credentials are compromised, the adversary inherits the same trust and privileges as the legitimate user.
 
 ---------
 Objective
