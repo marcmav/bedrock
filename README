@@ -384,14 +384,14 @@ Controls
 > - Multi-Factor Authentication
     Enable MFA wherever supported. Authentication should require something more than a password alone.
 
+> - Passkeys
+    Prefer passkeys where supported. Hardware-backed, phishing-resistant authentication eliminates shared secrets and reduces reliance on passwords while maintaining strong security.
+
 > - TOTP Authenticator Selection
     Use an open-source, locally encrypted TOTP application with no cloud dependency.
 
 > - TOTP Over SMS
     Use time-based one-time passwords (TOTP) as the second factor wherever possible. (SMS-based 2FA is vulnerable to SIM swapping and interception and must be avoided).
-
-> - Passkeys
-    Prefer passkeys where supported. Hardware-backed, phishing-resistant authentication eliminates shared secrets and reduces reliance on passwords while maintaining strong security.
 
 > - Authentication Decoupling
     Consider storing TOTP secrets separately from the primary password vault for high-value accounts. (This reduces the impact of a single vault compromise).
@@ -405,11 +405,11 @@ Controls
 > - Recovery Codes
     Store recovery codes offline in a secure location. They are equivalent to authentication credentials and must receive the same protection.
 
-> - Secret Sharing
-    Credentials must never be transmitted through insecure communication channels. Share secrets only through encrypted mechanisms when absolutely necessary.
-
 > - Credential Verification
     Credentials must never be entered on a domain that has not been independently verified. (Use the password manager's domain matching capabilities to reduce the risk of credential submission to fraudulent websites).
+
+> - Secret Sharing
+    Credentials must never be transmitted through insecure communication channels. Share secrets only through encrypted mechanisms when absolutely necessary.
 
 > - Credential Rotation
     Rotate credentials immediately after suspected compromise or unauthorized disclosure. (Routine password rotation without evidence of compromise is generally unnecessary).
