@@ -338,7 +338,7 @@ Browser activity is separated into distinct profiles according to trust level an
 Layer 4: Credentials
 ====================
 
-The Credentials layer protects the secrets that authenticate identity across every service, account and system. It consists of the password manager and Multi-factor authenticator, the two mechanisms responsible for generating, storing and producing proof of identity on demand. If this layer is compromised, every account and service above it is accessible to the adversary regardless of how well the layers below it are hardened.
+The Credentials layer manages the authentication material used to access systems, services and digital identities. It consists of the password manager and multi-factor authenticator, which are responsible for securely generating, storing and presenting authentication factors when required. If this layer is compromised, an adversary can authenticate as the legitimate user regardless of how well the lower layers are hardened.
 
 ----------
 Components
