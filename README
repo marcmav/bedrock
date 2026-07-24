@@ -391,7 +391,7 @@ Controls
     Use time-based one-time passwords (TOTP) as the second factor wherever possible. (SMS-based 2FA is vulnerable to SIM swapping and interception and must be avoided).
 
 > - Passkeys
-    Prefer passkeys where supported. Hardware-backed, phishing-resistant authentication reduces reliance on passwords while maintaining strong security guarantees.
+    Prefer passkeys where supported. Hardware-backed, phishing-resistant authentication eliminates shared secrets and reduces reliance on passwords while maintaining strong security.
 
 > - Authentication Decoupling
     Consider storing TOTP secrets separately from the primary password vault for high-value accounts. (This reduces the impact of a single vault compromise).
