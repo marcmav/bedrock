@@ -468,11 +468,11 @@ Controls
 > - Identity Separation
     Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service exposes only that alias, not the primary address or any other account).
 
-> - Phone Number Exposure
-    Avoid associating your primary phone number with services unless required. Where appropriate, use separate numbers for different trust domains.
-
 > - Minimal Personal Disclosure
     When creating accounts, provide the absolute bare minimum required data to satisfy the system registration constraints. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
+
+> - Phone Number Exposure
+    Avoid associating your primary phone number with services unless required. Where appropriate, use ghost numbers for different trust domains.
 
 > - Federated Login
     Avoid authenticating to external services through third-party identity providers (e.g. "Sign in with Google"). Federated login ties your primary identity account directly to every connected service and creates a single point of failure across all of them.
