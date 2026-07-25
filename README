@@ -453,9 +453,6 @@ Establish compartmentalized digital identities that minimize trust relationships
 Controls
 --------
 
-> - Identity Separation
-    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service exposes only that alias, not the primary address or any other account).
-
 > - Email Provider Selection
     Use an open-source, security-focused email provider that supports strong account protection, modern authentication mechanisms and transparent privacy practices based outside high-surveillance jurisdictions.
 
@@ -467,6 +464,9 @@ Controls
 
 > - Primary Email Exposure Minimization
     The primary email address must never appear in public registrations, forums, social profiles or any externally visible field. Treat it as a private internal routing address.
+
+> - Identity Separation
+    Separate identities according to their purpose. A root, professional, personal and a disposable identity must never share identifiers or linked accounts. (An identity should never become a single point of failure, every alias must be intentionally scoped, independently recoverable and isolated from unrelated activities, a breach of one service exposes only that alias, not the primary address or any other account).
 
 > - Phone Number Exposure
     Avoid associating your primary phone number with services unless required. Where appropriate, use separate numbers for different trust domains.
@@ -487,7 +487,7 @@ Controls
     Enable login alerts and account security notifications wherever available to detect unauthorized access promptly.
 
 > - Breach Response
-    If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions, review recovery settings and notify affected services where appropriate.
+    If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions and review recovery.
 
 > - Account Decommissioning
     Accounts that are no longer required must be deleted rather than abandoned. Abandoned accounts accumulate personal data and become targets for credential stuffing and takeover. (Dormant accounts expand the attack surface and are often forgotten).
