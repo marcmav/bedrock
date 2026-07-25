@@ -15,7 +15,7 @@ Defense-in-Depth is a security architecture principle that layers independent co
 
 Bedrock implements this model sequentially from the system's lowest trust boundary outward to digital identities. If a lower layer is compromised, the structural integrity of every layer above it is fundamentally invalid.
 
-[ Layer 5: Alias ] --- Digital Identities, Email Accounts, Online Accounts
+[ Layer 5: Alias ] --- Email Accounts, Online Accounts, Digital Identities
     [ Layer 4: Credentials ] --- Password Manager, MFA
         [ Layer 3: Interface ] --- Browser, Search Engine
             [ Layer 2: Gateway ] --- Firewall, DNS, VPN
@@ -433,9 +433,9 @@ Note: A dedicated anonymous identity with a disposable email handles all untrust
 Components
 ----------
 
-> - Digital Identities
 > - Email Accounts
 > - Online Accounts
+> - Digital Identities
 
 ---------
 Principle
