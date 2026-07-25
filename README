@@ -425,7 +425,8 @@ Controls
 Layer 5: Alias
 ==============
 
-The Alias layer is the outermost boundary of the security model. It defines how identity is projected across the internet through email addresses, online accounts, public personas and any other persistent identifier tied to online activity. If this layer is compromised or poorly compartmentalized, an adversary can correlate identities, recover accounts or propagate compromise across unrelated services.
+The Alias layer is the outermost boundary of the security model. It defines how identity is represented across the internet through email addresses, online accounts, public personas and every other persistent identifier associated with online activity. If this layer is compromised or poorly compartmentalized, an adversary can correlate identities, recover accounts or propagate compromise across unrelated services.
+
 
 Note: A dedicated anonymous identity with a disposable email handles all untrusted registrations. Alias forwarding services are intentionally out of scope.
 
