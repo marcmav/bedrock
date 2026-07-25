@@ -473,7 +473,7 @@ Controls
     When creating accounts, provide the absolute bare minimum required data to satisfy the system registration constraints. Optional profile fields should remain empty unless there is a legitimate need. (Every field completed is a data point available to scrapers and advertisers).
 
 > - Phone Number Exposure
-    Avoid associating your primary phone number with services unless required. Where appropriate, use ghost numbers for different trust domains.
+    Avoid associating your primary phone number with services unless required. Where appropriate, use dedicated phone numbers for different trust domains.
 
 > - Federated Login
     Avoid authenticating to external services through third-party identity providers (e.g. "Sign in with Google"). Federated login ties your primary identity account directly to every connected service and creates a single point of failure across all of them.
