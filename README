@@ -490,6 +490,9 @@ Controls
 > - Account Inventory
     Maintain an inventory of important online accounts, their associated identity, recovery email, recovery phone number and authentication method. Critical accounts should never rely on memory alone.
 
+> - Identifier Reuse Minimization
+    Avoid reusing usernames, display names and profile identifiers across unrelated identities. Shared identifiers allow independent services to be correlated even when separate email addresses are used.
+
 > - Breach Response
     If an identity is suspected of compromise, immediately rotate credentials, invalidate active sessions and review recovery.
 
