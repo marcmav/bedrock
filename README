@@ -441,7 +441,7 @@ Components
 Principle
 ---------
 
-Your real identity is a liability on the open internet. Every service that knows your real name, email or phone number is a potential breach vector. The less your real identity appears in external systems, the smaller the target.
+Your real identity is a liability on the open internet. Every service that knows your real name, email or phone number is a potential breach vector and a permanent record outside your control. The less your real identity appears in external systems, the smaller the attack surface and the harder it becomes to correlate, impersonate or recover access to your accounts without your knowledge.
 
 ---------
 Objective
