@@ -476,7 +476,7 @@ Controls
     Avoid associating your primary phone number with services unless required. Where appropriate, use dedicated phone numbers for different trust domains.
 
 > - Federated Login
-    Avoid authenticating to external services through third-party identity providers (e.g. "Sign in with Google"). Federated login ties your primary identity account directly to every connected service and creates a single point of failure across all of them.
+    Avoid authenticating to external services through third-party identity providers (e.g. "Sign in with Google") whenever practical. Federated login increases dependence on a single identity provider and expands the impact of compromise.
 
 > - Identity Consistency
     Every account should conform to the standards established in the Credentials layer. No account should exist outside the password manager or without appropriate authentication protections when supported.
