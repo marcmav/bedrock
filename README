@@ -2,7 +2,7 @@
 bedrock
 =======
 
-A playbook of the architectural root of my security model. It defines the foundational layers, principles, objectives and controls that every computer I own must satisfy before it can be considered trusted.
+A playbook of the architectural root of my security model. It defines the foundational layers, principles, objectives and controls that every computer I own must satisfy before they can be considered trusted.
 
 Scope: Bedrock defines the security architecture for personal computers (the layers I can consistently control on every machine I own), infrastructure outside the host (e.g., routers, security keys and other external hardware) is intentionally out of scope.
 While some controls incidentally improve privacy, every control in Bedrock is included because it strengthens the system's security.
@@ -13,7 +13,7 @@ Defense-in-Depth Model
 
 Defense-in-Depth is a security architecture principle that layers independent controls across different domains so that no single point of failure results in total compromise. Each layer assumes the layers above it are untrusted and the layers below it are already hardened. A threat that bypasses one control must still defeat every subsequent layer to reach its objective. https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
 
-Bedrock implements this model sequentially from the system's lowest trust boundary outward to digital identities. If a lower layer is compromised, the structural integrity of every layer above it is fundamentally invalid.
+Bedrock implements this model across six layers, starting at the system's lowest trust boundary and extending outward to digital identities. Each layer is a distinct domain of control with its own components, principles and controls. If any layer is compromised, every layer above it must be considered untrusted regardless of how well those layers are individually hardened.
 
 [ Layer 5: Alias ] --- Email Accounts, Online Accounts, Digital Identities
     [ Layer 4: Credentials ] --- Password Manager, MFA
