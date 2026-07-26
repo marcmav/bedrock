@@ -104,7 +104,7 @@ Components
 Principle
 ---------
 
-The operating system is the highest-privilege software layer on the machine. Every process, file, network connection and security control above this layer operates within the boundaries the OS enforces and depends on those boundaries being intact. A compromised operating system does not just expose its own layer, it renders every control above it meaningless. An adversary with OS-level access can read credentials, intercept network traffic, bypass browser isolation and impersonate any identity, silently and without triggering any of the controls that depend on the OS to function.
+A compromised operating system does not just expose its own layer, it renders every control above it meaningless. An adversary with OS-level access can read credentials, intercept network traffic, bypass browser isolation and impersonate any identity, silently and without triggering any of the controls that depend on the OS to function.
 
 ---------
 Objective
