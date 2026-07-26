@@ -150,7 +150,7 @@ Controls
     If remote administration is required, use public key authentication, disable password authentication, prohibit direct root login and expose the SSH service only when necessary.
 
 > - Mandatory Access Control
-    Enforce process-level access controls beyond standard Unix permissions. (Limits the blast radius of a compromised process).
+    Enforce process-level access controls beyond standard Unix permissions using a MAC framework. Standard Unix permissions determine what a user can access, MAC determines what a process can access regardless of the user running it. A compromised process running as root is still confined to the resources explicitly permitted by its MAC policy, preventing it from reading arbitrary files, spawning shells or escalating further into the system.
 
 > - Application Sandboxing
     Isolate high-risk applications from the rest of the system. (A browser should only have access to the network and downloads, a multimedia viewer should only have access to the file it is opening and nothing more).
