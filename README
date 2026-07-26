@@ -67,16 +67,16 @@ Controls
     Restrict boot sources to only those required for normal operation. External and network boot should be disabled when not needed. (Disabling USB and network boot eliminates the ability to boot a live OS or run cold boot attacks against the machine)
 
 > - Memory Execution Protection
-    Ensure processor-level execution prevention such as Intel XD (Execute Disable) or AMD NX (No-eXecute) are enabled in the firmware settings. These features enforce memory execution boundaries by preventing regions intended for data storage from being executed unless explicitly permitted. (A foundational mitigation against buffer overflow and memory corruption exploits, most modern processors support it but it must be explicitly enabled in firmware).
-
-> - Component Minimization
-    Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified.
+    Ensure processor-level execution prevention such as Intel XD or AMD NX are enabled in the firmware settings. These features enforce memory execution boundaries by preventing regions intended for data storage from being executed unless explicitly permitted. (A foundational mitigation against buffer overflow and memory corruption exploits, most modern processors support it but it must be explicitly enabled in firmware).
 
 > - TPM (Trusted Platform Module)
     If supported, the TPM can securely store encryption keys and binds them to the system's measured boot state. Used in conjunction with full-disk encryption to bind decryption keys to a measured boot state, helping detect unauthorized modifications during startup. This allows the platform to verify the integrity of the boot chain before releasing protected secrets, helping detect unauthorized modifications to firmware, the bootloader or other boot components.
 
 > - Decryption Key Protection
     Require a passphrase in addition to TPM verification before the decryption key is released. The key should only be released when both the measured boot state is trusted and a valid authentication factor has been provided. Platform integrity alone does not verify the user and user authentication alone does not verify the platform.
+
+> - Component Minimization
+    Disable firmware-level features and interfaces that are not required for the system's intended purpose. Every enabled component increases the attack surface and should be justified.
 
 > - Bootloader Updates
     Bootloaders are software and must receive security updates.
