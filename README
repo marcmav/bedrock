@@ -39,7 +39,7 @@ Components
 Principle
 ---------
 
-Physical access to an unprotected Core is equivalent to full system compromise. Every layer above this one assumes the Core has not been tampered with.
+Without adequate protection, physical access to the Core may allow an attacker to compromise the entire system. Every layer above this one assumes the Core has not been tampered with.
 
 ---------
 Objective
