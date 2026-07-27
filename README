@@ -26,7 +26,7 @@ Bedrock implements this model across six layers, starting at the system's lowest
 Layer 0: Core
 =============
 
-The Core layer represents the lowest trust boundary of a system. It consists of the firmware, which initializes hardware and establishes the initial trust state of the machine, and the bootloader, which is responsible for loading and transferring execution to the operating system. (If this layer is compromised, no layer above it can be trusted).
+The Core layer represents the lowest trust boundary of a system. It consists of the firmware, which initializes hardware and establishes the initial trust state of the machine, and the bootloader, which is responsible for loading and transferring execution to the operating system. If this layer is compromised, malicious code executes before the operating system loads and before any security control above it becomes active, making every layer above it untrustworthy by definition.
 
 ----------
 Components
